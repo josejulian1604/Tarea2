@@ -15,11 +15,15 @@ public class Tablero {
 
     public void moverJugador() {
         
-        if (jugadorMoviendo <= 4) {
-            fichas[jugadorMoviendo].avanzar();
-            jugadorMoviendo++;
+        if (jugadorMoviendo <= 4)
+            fichas[jugadorMoviendo].avanzar();    
+    }
 
-        }if(jugadorMoviendo > 4)
+    public void siguienteJugador() {
+
+        jugadorMoviendo++;
+
+        if(jugadorMoviendo == 5)
             jugadorMoviendo = 0;
     }
 
